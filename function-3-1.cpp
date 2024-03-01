@@ -2,22 +2,14 @@
 using namespace std;
 
 bool is_fanarray(int array[], int n){
-    int half = n/2; 
-
-    bool flag = false;
 
     if(n > 1){
-        for(int i = 0; i < half; i++){
-            if(array[i] == array[n-i-1]){
-                flag = true;
-            }else{
-                flag = false;
+        for(int i = 0; i < n/2; i++){
+            if(array[i] != array[n-i-1]){
+                return false;
             }
         }
-    } else{
-        return false;
     }
 
-    return flag;
-
+    return true;
 }

@@ -5,7 +5,12 @@ using namespace std;
 //find the half == to the median
 // bubble sort
 //https://prepinsta.com/data-structures-algorithms/sorting-of-array/
+
 int median_array(int array[], int n){
+
+    if(n <= 1 || n % 2 == 0){
+        return 0;
+    }
 
     if(n > 1){
         for(int i = 0; i < n; i++){
