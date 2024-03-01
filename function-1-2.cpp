@@ -9,20 +9,17 @@ using namespace std;
 double array_mean(int array[], int n){
     double average = 0.0; 
     int total = 0;
-     
-    for(int i = 0; i < n; i++){
-        if(n > 1){
+
+    if(n > 1){
+        for(int i = 0; i < n; i++){
             total += array[i];
-        }else{
-            return average;
         }
-        average = (double)total/n; 
-
     }
-    
-
+    else{
+        return 0;
+    }
+     
+    average = (double)total/n;
     return average;
 
 }
-
-//how to make it return 0.0???????????????????/
