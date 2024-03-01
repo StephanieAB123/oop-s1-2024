@@ -32,6 +32,6 @@ void two_five_nine(int array[], int n){
         }
     }
 
-    cout << "2:" << two << ";5:" << five << ";9:" << nine << endl;
+    cout << "2:" << two << ";5:" << five << ";9:" << nine << ";" << endl;
 
 }

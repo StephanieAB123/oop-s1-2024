@@ -6,14 +6,17 @@ using namespace std;
 
 int min_element(int array[], int n){
 
-    int smallest = 0;
+    int smallest = array[0];
 
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < n; j++){
-            if(array[j] < array[i]){
-                smallest = array[j];
+    if(n > 1){
+        for(int i = 0; i < n; i++){
+            if(array[i] < smallest){
+                smallest = array[i];
             }
         }
+    }
+    else{
+        return 0;
     }
 
     return smallest;
