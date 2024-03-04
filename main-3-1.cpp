@@ -5,7 +5,7 @@ extern bool is_fanarray(int array[], int n);
 
 int main(){
 
-    int array[5] = {1,2,4,2,1};
+    int array[5] = {2,1,3,1,2};
     cout << is_fanarray(array, 5) << endl; 
     return 0;
 
