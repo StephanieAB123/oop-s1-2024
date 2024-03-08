@@ -1,6 +1,8 @@
 #include <iostream> 
 using namespace std; 
 
+//https://www.w3schools.com/cpp/cpp_arrays_size.asp
+
 extern int sum_min_max(int integers[], int length); 
 
 int main(){

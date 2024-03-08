@@ -1,5 +1,5 @@
 #include <iostream> 
-using namespace std; 
+using namespace std;
 
 int array_min(int integers[], int length){
 
