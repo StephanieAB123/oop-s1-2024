@@ -10,8 +10,10 @@ int is_identity(int array[10][10]){
             if((array[i][j] != 1) && (array[i][j] != 0)){
                 return 0;
             }
-            if(array[i] == array[j] == 1){
-                flag = 1;    
+            if(array[i] == array[j] != 1){
+                flag = 0;    
+            }else{
+                flag = 1;
             }
         }
     }
