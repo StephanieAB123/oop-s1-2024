@@ -1,6 +1,8 @@
 #include <iostream> 
 using namespace std; 
 
+//https://stackoverflow.com/questions/61775677/c-array-of-binary-numbers-to-int-value
+
 int binary_to_int(int binary_digits[], int number_of_digits){
 
     int what = 0; 
