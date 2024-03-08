@@ -2,6 +2,8 @@
 #include <string> 
 using namespace std; 
 
+//https://www.freecodecamp.org/news/string-to-int-in-c-how-to-convert-a-string-to-an-integer-example/
+
 void print_binary_str(string decimal_number){
 
     int decimal = stoi(decimal_number);
