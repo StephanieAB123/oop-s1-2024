@@ -15,6 +15,6 @@ int main(){
         cout << "Age: " << array[i].age << endl;
     }
 
-    delete[] array;
+    delete[] array; //the two square brackets to prevent segmentation fault fsr.
     return 0;
 }
