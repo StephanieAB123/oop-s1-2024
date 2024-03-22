@@ -13,29 +13,21 @@ int main(){
     pl.people[1] = "Pie";
 
     PersonList newPl = deepCopyPersonList(pl);
-    cout << "Original" << endl
+    cout << "Original" << endl;
     for(int i = 0; i < pl.numPeople; i++){
-        cout << pl.people[i].name << "," << pl.people[i].age << endl;
-
-
+        cout << pl.people[i].name << ", " << pl.people[i].age << endl;
     }
 
-
-}
-    PersonList new_pl = shallowCopyPersonList(pl);
-
-    cout << "Original PersonList: " << endl;
+    cout << "Copied" << endl;
     for(int i = 0; i < pl.numPeople; i++){
-        cout << pl.people[i].name << " -- " << pl.people[i].age << endl;
+        cout << newPl.people[i].name << ", " << newPl.people[i].age << endl;
     }
 
-    cout << "Copied PersonList: " << endl;
-    for(int i = 0; i < new_pl.numPeople; i++){
-        cout << new_pl.people[i].name << " -- " << new_pl.people[i].age << endl;
-    }
-
-    delete[] pl.people; 
-    delete[] new_pl.people;
+    delete[] pl.people;
+    delete[] newPl.people;
 
     return 0;
+
+
+
 }
