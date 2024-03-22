@@ -9,13 +9,13 @@ int main(){
     cout << "Enter a number: ";
     cin >> n;
 
-    PersonList PL = createPersonList(n);
-    cout << "Person List --- Number of People: " << PL.numPeople << endl;
+    PersonList pl = createPersonList(n);
+    cout << "Person List --- Number of People: " << pl.numPeople << endl;
 
     for(int i = 0; i < n; i++){
-        cout << "Person " << i + 1 << " --- Name: " << PL.people[i].name << " --- Age: " << PL.people[i].age << endl; 
+        cout << "Person " << i + 1 << " --- Name: " << pl.people[i].name << " --- Age: " << PL.people[i].age << endl; 
     }
 
-    delete[] PL.people;
+    delete[] pl.people;
     return 0;
 }

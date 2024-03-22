@@ -1,27 +1,20 @@
 #include <iostream> 
-#include <string>
 #include "Person.h"
-using namespace std;
+using namespace std; 
 
-extern PersonList deepCopyPersonList(PersonList pl);
+extern PersonList shallowCopyPersonList(PersonList pl);
 
 int main(){
-    PersonList pl;
-    pl.numPeople = 2; 
-    pl.people = new Person[pl.numPeople];
-    pl.people[0] = "Paige";
-    pl.people[1] = "Pie";
+    PersonList pl; 
+    pl.numPeople = 3;
+    pl.people = new Person[3];
+    pl.people[0].name = "Paige";
+    pl.people[0].age = 19;
+    pl.people[1].name = "Pie";
+    pl.people[1].age = 18;
+    pl.people[2].name = "Scarlett";
+    pl.people[2].age = 20;
 
-    PersonList newPl = deepCopyPersonList(pl);
-    cout << "Original" << endl
-    for(int i = 0; i < pl.numPeople; i++){
-        cout << pl.people[i].name << "," << pl.people[i].age << endl;
-
-
-    }
-
-
-}
     PersonList new_pl = shallowCopyPersonList(pl);
 
     cout << "Original PersonList: " << endl;
