@@ -5,10 +5,14 @@
 using namespace std;
 
 Orchestra::Orchestra(){
-    // currentSize = 0;
+
+    Orchestra(1);
+
 }
 
 Orchestra::Orchestra(int size){
+    currentSize = 0;
+    maxSize = size;
     musicians = new Musician[size];
 
 }
