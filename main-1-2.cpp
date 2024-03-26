@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Musician.h"
-#include "Musician.cpp"
 #include "Orchestra.h"
 
 using namespace std;
