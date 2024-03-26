@@ -21,7 +21,7 @@ Orchestra::Orchestra(int size){
 // full otherwise returns false
 bool Orchestra::add_musician(Musician new_musician){
 
-    if(get_current_number_of_members() < maxSize-1){
+    if(get_current_number_of_members() < maxSize){
         musicians[get_current_number_of_members()] = new_musician;
         currentSize++;
         return true;
@@ -56,5 +56,7 @@ bool Orchestra::has_instrument(string instrument){
 }
 
 Orchestra::~Orchestra(){
-    delete musicians;
+    if(musicians != NULL){
+        delete[] musicians;
+    }
 }

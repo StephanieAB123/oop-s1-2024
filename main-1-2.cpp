@@ -60,4 +60,6 @@ int main() {
   } else {
     cout << "The orchestra does not have a violinist" << endl;
   }
+
+  return 0;
 }
