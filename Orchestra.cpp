@@ -21,7 +21,7 @@ Orchestra::Orchestra(int size){
 // full otherwise returns false
 bool Orchestra::add_musician(Musician new_musician){
 
-    if(get_current_number_of_members() < maxSize){
+    if(get_current_number_of_members() < maxSize-1){
         musicians[get_current_number_of_members()] = new_musician;
         return true;
     } else{
