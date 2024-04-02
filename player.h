@@ -13,44 +13,21 @@ class Player{
         int damage;
     public: 
 
-        Player(){
-            name = "null";
-            health = 0;
-            damage = 0;
-        };
+        Player();
 
-        Player(string name, int health, int damage){
-            this->name = name; 
-            this->health = health;
-            this->damage = damage;
-        }
+        Player(string name, int health, int damage);
 
-        void attack(Player* opponent, int damageWAA){
-            //warrior deals the same damage (the data member in the player class. Regardless of weapon.)
-            opponent->takeDamage(damageWAA); 
-        }
+        void attack(Player* opponent, int damageWAA);
 
-        void takeDamage(int moreDamage){
-            this->health -= moreDamage;
-            //output a message describing how much damage the player took and their remaining health points
-            cout << name << " takes " << damage << " damage. Remaining health: " << health << "\n";
-        }
+        void takeDamage(int moreDamage);
 
-        string getName(){
-            return this-> name;
-        }
+        string getName();
 
-        int getHealth(){
-            return this-> health;
-        }
+        int getHealth();
 
-        void setHealth(int health){
-            this-> health = health;
-        }  
+        void setHealth(int health);
 
-        int getDamage(){
-            return this-> damage;
-        }
+        int getDamage();
         //void setDamage(int damage){
         //    this-> damage = damage;
         //}
