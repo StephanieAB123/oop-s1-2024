@@ -40,6 +40,14 @@ class Spot{
         void setCategory(char category){
             this->category = category;
         }
+
+        int getX() {
+            return get<0>(location); 
+        }
+
+        int getY() const {
+            return get<0>(location);
+        }
 };
 
 #endif
